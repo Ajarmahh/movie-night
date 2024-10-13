@@ -9,9 +9,9 @@ def main():
     storage_type = input("Select storage type (1 = JSON, 2 = CSV): ").strip()
 
     if storage_type == '1':
-        storage = StorageJson('movies.json')
+        storage = StorageJson('data/movies.json')
     elif storage_type == '2':
-        storage = StorageCsv('movies.csv')
+        storage = StorageCsv('data/movies.csv')
     else:
         print("Invalid storage type selected.")
         return

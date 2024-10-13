@@ -1,6 +1,7 @@
 import csv
 from istorage import IStorage
 
+
 class StorageCsv(IStorage):
     def __init__(self, file_path):
         self.file_path = file_path
